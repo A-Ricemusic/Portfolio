@@ -4,11 +4,11 @@ A minimal, responsive portfolio built with Next.js App Router, React, and TypeSc
 
 ## Development
 
-Requires Node.js 20.9 or later.
+Requires Bun 1.3.14 and Node.js 20.9 or later. Bun manages dependencies and runs the package scripts.
 
 ```sh
-npm install
-npm run dev
+bun install
+bun run dev
 ```
 
 Open http://localhost:3000.
@@ -16,13 +16,13 @@ Open http://localhost:3000.
 ## Production
 
 ```sh
-npm run lint
-npm run typecheck
-npm run build
-npm start
+bun run lint
+bun run typecheck
+bun run build
+bun run start
 ```
 
-The build exports a completely static website to `out/`. `npm start` serves that directory locally. Deploy `out/` to any static host, or import this repository into Vercel using the Next.js preset. No database, environment variables, API keys, or runtime backend are required.
+The build exports a completely static website to `out/`. `bun run start` serves that directory locally. Deploy `out/` to any static host, or import this repository into Vercel using the Next.js preset. No database, environment variables, API keys, or runtime backend are required.
 
 ## Customize
 
