@@ -112,11 +112,9 @@ export default function Home() {
           </h1>
           <div className="hero-bottom">
             <p>
-              I’m Anthony, a full-stack TypeScript developer building
-              <br className="desktop-break" /> thoughtful web applications, AI
-              tools, and interactive worlds.
-              <br className="desktop-break" /> Always learning. Always making
-              something better.
+              I’m Anthony, a full-stack TypeScript developer.
+              <br className="desktop-break" /> Explore Caregiver, my assisted living AI project,
+              <br className="desktop-break" /> and RPG Template, a foundation for Roblox creators.
             </p>
             <a className="round-link" href="#work">
               <span>Explore my work</span>
@@ -236,10 +234,11 @@ export default function Home() {
                 experiments and game development.
               </p>
               <p>
-                My projects explore different ways software can be useful:
-                helping students think through a problem, organizing information
-                for assisted living, or giving game creators a foundation to
-                build on.
+                Caregiver and RPG Template are the centerpieces of my work.
+                Caregiver explores how AI, retrieval, and dashboards can support
+                assisted living management. RPG Template brings reusable gameplay
+                systems and tutorials together to help Roblox creators build
+                their own adventures.
               </p>
               <p>
                 I follow the idea of Kaizen: learning a little more, refining
@@ -279,28 +278,28 @@ export default function Home() {
           <div className="experience-list">
             {[
               {
+                icon: Layers,
+                title: "Caregiver · AI & data",
+                description:
+                  "Connecting conversational AI, Redis retrieval, SQL dashboards, and Twilio reminders in Caregiver, an assisted living project for DeveloperWeek Hackathon 2025.",
+                skills: "Python · Redis · SQL · Oracle APEX · Twilio",
+                link: "Developer-Week-Hackathon-2025-Caregiver",
+              },
+              {
+                icon: Gamepad2,
+                title: "RPG Template · Game systems",
+                description:
+                  "Creating a customizable Roblox RPG foundation with quests, inventory, spawning, weapons, and abilities, supported by video tutorials for other developers.",
+                skills: "Lua · Roblox · Rojo · Aero",
+                link: "RPG-Template",
+              },
+              {
                 icon: Code2,
                 title: "Full-stack web development",
                 description:
                   "Connecting clear interfaces with the services behind them. Projects include Recall, a React portfolio template, and a Flask food tracker.",
                 skills: "TypeScript · React · Python · Flask · Convex",
                 link: "Dsa-App",
-              },
-              {
-                icon: Layers,
-                title: "AI & data-driven applications",
-                description:
-                  "Exploring conversational interfaces, contextual retrieval, and useful data visualization through Caregiver and School-safe AI.",
-                skills: "OpenAI API · Redis · SQL · Oracle APEX",
-                link: "Developer-Week-Hackathon-2025-Caregiver",
-              },
-              {
-                icon: Gamepad2,
-                title: "Interactive worlds & game systems",
-                description:
-                  "Building reusable gameplay systems, from Roblox quests and inventories to scoring and round management in Fortnite.",
-                skills: "Lua · Roblox · Rojo · Verse · UEFN",
-                link: "RPG-Template",
               },
             ].map((item, i) => (
               <div className="experience-row" key={item.title}>

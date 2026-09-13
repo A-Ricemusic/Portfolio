@@ -1,6 +1,28 @@
 export const github = "https://github.com/A-Ricemusic";
 export const projects = [
   {
+    id: "caregiver",
+    name: "Caregiver",
+    category: "AI & data",
+    eyebrow: "FEATURED · DEVELOPERWEEK HACKATHON · 2025",
+    description:
+      "Built for DeveloperWeek Hackathon 2025, Caregiver brings conversational AI and Redis vector search to assisted living management. Oracle APEX dashboards turn SQL data into insights, while Twilio delivers event reminders.",
+    tags: ["Python", "Redis", "Oracle APEX", "Twilio"],
+    repo: "Developer-Week-Hackathon-2025-Caregiver",
+    art: "care",
+  },
+  {
+    id: "rpg",
+    name: "RPG Template",
+    category: "Game development",
+    eyebrow: "FEATURED · A FOUNDATION FOR NEW WORLDS",
+    description:
+      "A reusable foundation for Roblox RPGs, combining quest, inventory, spawning, weapon, and ability systems. Built with Lua, Aero, and Rojo, the template includes video tutorials to help other creators understand and customize their own worlds.",
+    tags: ["Lua", "Roblox", "Rojo", "Aero"],
+    repo: "RPG-Template",
+    art: "rpg",
+  },
+  {
     id: "recall",
     name: "Recall",
     category: "Web apps",
@@ -12,17 +34,6 @@ export const projects = [
     art: "recall",
   },
   {
-    id: "caregiver",
-    name: "Caregiver",
-    category: "AI & data",
-    eyebrow: "DEVELOPERWEEK HACKATHON · 2025",
-    description:
-      "An assisted living management project connecting conversational AI, vector search, SQL dashboards, and event reminders in one care-focused experience.",
-    tags: ["Python", "Redis", "Oracle APEX", "Twilio"],
-    repo: "Developer-Week-Hackathon-2025-Caregiver",
-    art: "care",
-  },
-  {
     id: "tutor",
     name: "School-safe AI",
     category: "AI & data",
@@ -32,17 +43,6 @@ export const projects = [
     tags: ["Python", "Flask", "OpenAI API"],
     repo: "School-safe-AI",
     art: "tutor",
-  },
-  {
-    id: "rpg",
-    name: "RPG Template",
-    category: "Game development",
-    eyebrow: "A FOUNDATION FOR NEW WORLDS",
-    description:
-      "A reusable Roblox RPG template with quests, inventories, spawning, weapons, and abilities, accompanied by video tutorials for other creators.",
-    tags: ["Lua", "Roblox", "Rojo", "Aero"],
-    repo: "RPG-Template",
-    art: "rpg",
   },
   {
     id: "verse",
