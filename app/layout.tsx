@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
+
 export const metadata: Metadata = {
   title: "Anthony Rice — Full-stack Developer",
   description:
-    "Full-stack TypeScript developer in California. Explore Anthony Rice’s work across web applications, AI tools, and game development.",
+    "Full-stack TypeScript developer in California. Explore Anthony Rice's work across web applications, AI tools, and game development.",
   openGraph: {
     title: "Anthony Rice — Full-stack Developer",
     description:
@@ -12,7 +13,9 @@ export const metadata: Metadata = {
   },
   twitter: { card: "summary", title: "Anthony Rice — Full-stack Developer" },
 };
+
 const themeScript = `(function(){try{var t=localStorage.getItem('portfolio-theme');document.documentElement.dataset.theme=t==='light'||t==='dark'?t:matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}catch(e){document.documentElement.dataset.theme=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}})()`;
+
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
