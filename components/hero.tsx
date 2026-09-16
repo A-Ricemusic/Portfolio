@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import { ArrowDown, MapPin } from "lucide-react";
 import { ease } from "@/components/motion";
-import { stats } from "@/lib/experience";
 
 const heroStagger = {
   visible: { transition: { staggerChildren: 0.12, delayChildren: 0.15 } },
@@ -48,8 +47,7 @@ export function Hero() {
 
         <motion.p className="hero-lead" variants={heroItem}>
           I build thoughtful web applications, AI-powered tools, and game
-          systems — from Caregiver&apos;s assisted-living intelligence to RPG
-          Template&apos;s reusable Roblox foundation.
+          systems.
         </motion.p>
 
         <motion.div className="hero-actions" variants={heroItem}>
@@ -64,17 +62,6 @@ export function Hero() {
           </a>
         </motion.div>
 
-        <motion.div className="hero-stats" variants={heroItem}>
-          {stats.map((stat) => (
-            <div className="stat-card" key={stat.label}>
-              <span className="stat-value">
-                {stat.value}
-                <span className="stat-suffix">{stat.suffix}</span>
-              </span>
-              <span className="stat-label">{stat.label}</span>
-            </div>
-          ))}
-        </motion.div>
       </motion.div>
 
       <motion.div

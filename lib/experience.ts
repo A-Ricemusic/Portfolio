@@ -27,12 +27,6 @@ export const experienceItems = [
   },
 ] as const;
 
-export const stats = [
-  { value: 6, suffix: "+", label: "Open-source projects" },
-  { value: 3, suffix: "", label: "Development domains" },
-  { value: 5, suffix: "+", label: "Languages & stacks" },
-] as const;
-
 export const marqueeSkills = [
   "TypeScript",
   "React",
