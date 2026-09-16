@@ -5,10 +5,16 @@ import { ArrowUpRight, Github, Youtube } from "lucide-react";
 import { useState } from "react";
 import { ease } from "@/components/motion";
 import { Reveal } from "@/components/motion";
-import { ProjectArt } from "@/components/project-art";
 import { github, projects } from "@/lib/projects";
 
-const filters = ["All projects", "Web apps", "AI & data", "Game development"];
+const filters = [
+  "All projects",
+  "Developer tools",
+  "Web apps",
+  "Mobile apps",
+  "AI & data",
+  "Game development",
+];
 
 export function WorkSection() {
   const [filter, setFilter] = useState("All projects");
@@ -64,27 +70,25 @@ export function WorkSection() {
           {filtered.map((project, i) => (
             <motion.article
               key={project.id}
-              className={`project-card${i < 2 ? " featured" : ""}`}
+              className="project-card"
               layout
               initial={{ opacity: 0, scale: 0.96, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.96, y: -10 }}
               transition={{ duration: 0.45, ease, delay: i * 0.05 }}
             >
-              <a
-                className="project-image-link"
-                href={`${github}/${project.repo}`}
-                target="_blank"
-                rel="noreferrer"
-                aria-label={`View ${project.name} on GitHub`}
-              >
-                <ProjectArt kind={project.art} />
-                <div className="project-overlay">
-                  <span className="project-open">
-                    <ArrowUpRight size={20} />
-                  </span>
+              {"videoEmbed" in project && project.videoEmbed && (
+                <div className="project-video">
+                  <iframe
+                    src={project.videoEmbed}
+                    title={`${project.name} video`}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    allowFullScreen
+                    loading="lazy"
+                  />
                 </div>
-              </a>
+              )}
               <div className="project-info">
                 <span className="project-eyebrow">{project.eyebrow}</span>
                 <div className="project-title-row">
@@ -115,15 +119,15 @@ export function WorkSection() {
                     <Github size={14} />
                     GitHub
                   </a>
-                  {"video" in project && project.video && (
+                  {"videoUrl" in project && project.videoUrl && (
                     <a
                       className="project-action"
-                      href={project.video}
+                      href={project.videoUrl}
                       target="_blank"
                       rel="noreferrer"
                     >
                       <Youtube size={14} />
-                      Watch video
+                      YouTube
                     </a>
                   )}
                 </div>

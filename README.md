@@ -1,6 +1,6 @@
 # Anthony Rice · Portfolio
 
-A minimal, responsive portfolio built with Next.js App Router, React, and TypeScript. Includes six project showcases, category filters, light/dark mode with a saved preference and system default, accessible navigation, reduced-motion support, and custom CSS project illustrations.
+A minimal, responsive portfolio built with Next.js App Router, React, and TypeScript. Includes seven project showcases, category filters, embedded project videos, light/dark mode with a saved preference and system default, accessible navigation, and reduced-motion support.
 
 ## Development
 
@@ -28,21 +28,20 @@ The build exports a completely static website to `out/`. `bun run start` serves 
 
 - `lib/projects.ts`: project descriptions, categories, technologies, and GitHub links.
 - `app/page.tsx`: biography, project-based experience, social links, and page sections.
-- `app/globals.css`: themes, responsive layouts, illustrations, and animation.
+- `app/globals.css`: themes, responsive layouts, project videos, and animation.
 - `app/layout.tsx`: metadata and initial theme handling.
-- `components/project-art.tsx`: decorative project illustrations (not screenshots of the original apps).
 
 Fonts load from Google Fonts with local system fallbacks. No analytics or contact-form service is included. Contact links lead to Anthony’s public LinkedIn and GitHub profiles.
 
 ## Content sources
 
-Content reviewed September 13, 2026. Experience describes repository-backed project work; no employment dates, job titles, project impact metrics, or certifications are assumed.
+Content reviewed September 16, 2026. Experience describes repository-backed project work; no employment dates, job titles, project impact metrics, or certifications are assumed.
 
 - [GitHub profile](https://github.com/A-Ricemusic): name, location, full-stack TypeScript focus, Kaizen philosophy, LinkedIn link.
 - [Recall](https://github.com/A-Ricemusic/Dsa-App): practice journal, React, Convex, WorkOS; TypeScript source.
 - [Caregiver](https://github.com/A-Ricemusic/Developer-Week-Hackathon-2025-Caregiver): hackathon context, assisted living concept, AI retrieval, dashboards, reminders.
-- [School-safe AI](https://github.com/A-Ricemusic/School-safe-AI): tutoring approach, Flask, Python, OpenAI integration.
 - [RPG Template](https://github.com/A-Ricemusic/RPG-Template): Roblox systems, Lua, Rojo, Aero, tutorial series.
-- [Verse Box Fighting](https://github.com/A-Ricemusic/VerseBoxFightingMap): UEFN mechanics and Verse.
-- [Food Tracker](https://github.com/A-Ricemusic/Food-Tracker-App-Flask-API): food tracking and Flask backend/frontend.
-- [React portfolio template](https://github.com/A-Ricemusic/react-portfolio-site-template): additional web development experience.
+- [Rethinking Git](https://github.com/A-Ricemusic/rethinking-git): experimental Rust source control, snapshots, workspaces, operation logs, and Git interoperability.
+- [MD E2E](https://github.com/A-Ricemusic/md-e2e): Markdown browser journeys, TypeScript, Bun, Playwright, and evidence-backed results.
+- [Let's Learn Math](https://github.com/A-Ricemusic/Let-s-Learn-Math): Expo React Native learning app, Convex, authentication, lessons, progress, and games.
+- [ApplyPilot](https://github.com/A-Ricemusic/applypilot): evidence-first job discovery, resume tailoring, Next.js, Convex, and OpenRouter.
