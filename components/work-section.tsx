@@ -1,7 +1,7 @@
 "use client";
 
 import { AnimatePresence, motion } from "framer-motion";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Github, Youtube } from "lucide-react";
 import { useState } from "react";
 import { ease } from "@/components/motion";
 import { Reveal } from "@/components/motion";
@@ -104,6 +104,28 @@ export function WorkSection() {
                   {project.tags.map((tag) => (
                     <span key={tag}>{tag}</span>
                   ))}
+                </div>
+                <div className="project-actions">
+                  <a
+                    className="project-action"
+                    href={`${github}/${project.repo}`}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <Github size={14} />
+                    GitHub
+                  </a>
+                  {"video" in project && project.video && (
+                    <a
+                      className="project-action"
+                      href={project.video}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <Youtube size={14} />
+                      Watch video
+                    </a>
+                  )}
                 </div>
               </div>
             </motion.article>

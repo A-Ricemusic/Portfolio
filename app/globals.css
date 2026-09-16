@@ -908,6 +908,27 @@ h3 {
   background: color-mix(in srgb, var(--accent) 10%, var(--tag));
 }
 
+.project-actions {
+  display: flex;
+  gap: 16px;
+  margin-top: 22px;
+}
+
+.project-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 600;
+  transition: color 0.2s, gap 0.2s;
+}
+
+.project-action:hover {
+  color: var(--accent);
+  gap: 9px;
+}
+
 /* ── Project art ── */
 .project-art {
   height: 260px;

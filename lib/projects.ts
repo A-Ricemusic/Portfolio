@@ -9,6 +9,7 @@ export const projects = [
       "Built for DeveloperWeek Hackathon 2025, Caregiver brings conversational AI and Redis vector search to assisted living management. Oracle APEX dashboards turn SQL data into insights, while Twilio delivers event reminders.",
     tags: ["Python", "Redis", "Oracle APEX", "Twilio"],
     repo: "Developer-Week-Hackathon-2025-Caregiver",
+    video: "https://youtu.be/zkZkpWxOpyU?si=fhfwQrdaqypjY9Ge",
     art: "care",
   },
   {
@@ -20,6 +21,7 @@ export const projects = [
       "A reusable foundation for Roblox RPGs, combining quest, inventory, spawning, weapon, and ability systems. Built with Lua, Aero, and Rojo, the template includes video tutorials to help other creators understand and customize their own worlds.",
     tags: ["Lua", "Roblox", "Rojo", "Aero"],
     repo: "RPG-Template",
+    video: "https://youtu.be/0eEE3v6-ouU?si=4ZR3fOFTz3YY0dFZ",
     art: "rpg",
   },
   {
